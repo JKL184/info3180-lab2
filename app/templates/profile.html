@@ -1,0 +1,37 @@
+{% extends "base.html" %} {% block main %}
+<div class="profilehead">
+	<img
+		class="himg"
+		src="{{ url_for('static',
+filename='toonMe.jpeg') }}"
+		alt=" picture of my dog"
+	/>
+	<h3>Jordan Lewis</h3>
+	<p>@jLewis</p>
+	<p>Deep Bush Country, Jamaica</p>
+	<p>{{ date }}</p>
+</div>
+<div class="profilecontent">
+	<p id="desc">
+		A very stressed,depressed,trying,dying,crying and broke joke of a human
+		being who still enjoys web development despite the university's best
+		attempts at mental abuse. Contact me if in need of depression disguised as
+		memes.
+	</p>
+	<div id="stats">
+		<div id="posts">
+			<h3>7</h3>
+			<p>Posts</p>
+		</div>
+		<div id="following">
+			<h3>13</h3>
+			<p>Following</p>
+		</div>
+		<div id="followers">
+			<h3>184</h3>
+			<p>Followers</p>
+		</div>
+	</div>
+	<button>Follow</button>
+</div>
+{% endblock %}
